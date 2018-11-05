@@ -1,0 +1,7 @@
+<div *ngIf="isLogged;else bos" class="alert alert-success">
+  Welcome, <a (click)="logOut()">Log out</a>
+</div>
+
+<ng-template #bos>
+  Giriş Yapılmadı
+</ng-template>
